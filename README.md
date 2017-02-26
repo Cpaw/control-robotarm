@@ -15,17 +15,24 @@
 
 1. サービス開始
 
-    `sudo /etc/init.d/webiopi start`
+    ```bash
+    sudo /etc/init.d/webiopi start
+    ```
  
 1. ブラウザで以下に接続
 
-    `WebIOPiのプログラムが走ってるpcのIPアドレス:8000`
+    ```
+    WebIOPiのプログラムが走ってるpcのIPアドレス:8000
+    ```
 
 1.  認証は以下で通る
 
-    `ユーザー名: webiopi
-パスワード: raspberry`
+    | User |Password|
+    |--------|------------|
+    |webiopi|raspberry|
 
 1. サービス終了
 
-    `sudo /etc/init.d/webiopi stop`
+    ```bash
+    sudo /etc/init.d/webiopi stop
+    ```
