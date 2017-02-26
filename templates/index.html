@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+  <title>robot_arm_controller</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="/webiopi.js"></script>
+  <script type="text/javascript" src="seigyo.js"></script>
+
+  <!-- ストリーミング用 -->
+  <img id="cameraImg" src="mizu.jpg" width="" height="">
+  <script type="text/javascript" src='127.0.0.1:6000/streaming.js'></script>
+
+</head>
+<body bgcolor="#000000">
+  <div align="center">
+    <table>
+        <tbody>
+            <tr>
+                <th class="g">Gripper</th>
+                <td class="g"><form><input class="myButtonB" type="button" value="Catch" onclick="motor_mode(11)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonB" type="button" value="Release" onclick="motor_mode(12)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonR" type="button" value="Stop" onclick="motor_mode(10)" data-role="none"></form></td>
+            </tr>
+	    
+            <tr>
+                <th class="b">Wrist</th>
+                <td class="b"><form><input class="myButtonB" type="button" value="Turn L" onclick="motor_mode(21)" data-role="none"></form></td>
+                <td class="b"><form><input class="myButtonB" type="button" value="Turn R" onclick="motor_mode(22)" data-role="none"></form></td>
+                <td class="b"><form><input class="myButtonR" type="button" value="Stop" onclick="motor_mode(20)" data-role="none"></form></td>
+            </tr>
+            <tr>
+                <th class="g">Elbow</th>
+                <td class="g"><form><input class="myButtonB" type="button" value="Up" onclick="motor_mode(31)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonB" type="button" value="Down" onclick="motor_mode(32)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonR" type="button" value="Stop" onclick="motor_mode(30)" data-role="none"></form></td>
+            </tr>
+            <tr>
+                <th class="b">Shoulder</th>
+                <td class="b"><form><input class="myButtonB" type="button" value="Up" onclick="motor_mode(41)" data-role="none"></form></td>
+                <td class="b"><form><input class="myButtonB" type="button" value="Down" onclick="motor_mode(42)" data-role="none"></form></td>
+                <td class="b"><form><input class="myButtonR" type="button" value="Stop" onclick="motor_mode(40)" data-role="none"></form></td>
+            </tr>
+            <tr>
+                <th class="g">Base</th>
+                <td class="g"><form><input class="myButtonB" type="button" value="Turn L" onclick="motor_mode(51)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonB" type="button" value="Turn R" onclick="motor_mode(52)" data-role="none"></form></td>
+                <td class="g"><form><input class="myButtonR" type="button" value="Stop" onclick="motor_mode(50)" data-role="none"></form></td>
+            </tr>
+	    <tr>
+                <th class="b">LED</th>
+                <td class="b" colspan="2"><form><input class="myButtonB" type="button" value="ON" onclick="led_mode(1)" data-role="none"></form></td>
+                <td class="b"><form><input class="myButtonR" type="button" value="OFF" onclick="led_mode(0)" data-role="none"></form></td>
+            </tr>
+	    <tr>
+	        <td class="b" colspan="4"><form><input class="myButtonR" type="button" value="ALL OFF" onclick="all_off()" data-role="none"></form></td>
+	    </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
