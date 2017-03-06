@@ -5,18 +5,38 @@ webiopi.setDebug()
 GPIO = webiopi.GPIO
 
 #モーターに使うピン
-MOT_PIN1 = 2
-MOT_PIN2 = 3
-MOT_PIN3 = 4
-MOT_PIN4 = 17
-MOT_PIN5 = 27
-MOT_PIN6 = 22
-MOT_PIN7 = 10
-MOT_PIN8 = 9
-MOT_PIN9 = 11
-MOT_PIN10 = 7
+MOT_PIN1 = 27
+MOT_PIN2 = 26
+
+MOT_PIN3 = 5 
+MOT_PIN4 = 2
+
+MOT_PIN5 = 19
+MOT_PIN6 = 17
+
+MOT_PIN7 = 3
+MOT_PIN8 = 6
+
+MOT_PIN9 = 4
+MOT_PIN10 = 13
+
+"""
+#正転
+MOT_PIN1 = 2 #手首右
+MOT_PIN2 = 3 #肩上
+MOT_PIN3 = 4 #ベース左
+MOT_PIN4 = 17 #肘下
+MOT_PIN5 = 27 #つまみ閉じる
+#逆転
+MOT_PIN6 = 5 #手首左
+MOT_PIN7 = 6 #肩下
+MOT_PIN8 = 13 #ベース右
+MOT_PIN9 = 19 #肘上
+MOT_PIN10 = 26 #つまみ開ける
+"""
+
 #LED(プログラムの試験用)に使うピン
-LEDPIN_1 = 8
+LEDPIN_1 = 0
 
 #LEDクラス
 class LED():
